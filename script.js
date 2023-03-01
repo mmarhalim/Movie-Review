@@ -36,7 +36,7 @@ $(document).ready(function() {
 
       const center = document.createElement("center");
 
-      title.innerHTML = element.title;
+      title.innerHTML = `${element.title}<br><a href="movie.html?id=${element.id}&title=${element.title}">User Reviews</a>`;
       image.src = IMG_PATH + element.poster_path;
 
       center.appendChild(image);
